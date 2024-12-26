@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>online voting - login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>demo</h1>
+    
+    <center>
+        <h1>Login</h1>
+
+        <form action="api/login.php" method="post">
+            <input type="number" name="mobile" placeholder="Enter number"> <br><br>
+            <input type="password" name="password" placeholder="password"><br><br>
+            <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br><br>
+            <button class="sub-btn" type="submit">submit</button><br><br>
+        </form>
+
+        <span>Already Login <a href="routes/register.html">Click here</a></span>
+    </center>
+
 </body>
 </html>
